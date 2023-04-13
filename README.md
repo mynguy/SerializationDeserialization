@@ -1,6 +1,6 @@
 # Serialization and Deserialization
 
-README: Serialization and Deserialization in Java
+README:
 
 Serialization and deserialization with the Movie.java file. Serialization refers to the process of converting an object into a byte stream, which can be stored in a file or transferred over a network. Deserialization is the opposite process, where a byte stream is converted back into an object.
 
