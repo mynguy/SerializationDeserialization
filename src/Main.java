@@ -1,17 +1,30 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+/**
+ * Name: My Nguyen
+ * Main.java
+ *
+ * Description: This is the driver program for Movie.java. It demonstrates how to create a Movie object and serialize
+ * it to a CSV file using the Java NIO API. It also shows how to deserialize the CSV file to a new Movie object and
+ * compare it to the original object for equivalence.
+ */
+
+import java.io.IOException;
 public class Main {
-    public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+    public static void main(String[] args) throws IOException {
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        // Create a new Movie object and set its attributes
+        Movie actionMovie = new Movie("John Wick", 2014, "Action");
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        // Serialize the object to a file named "action.txt"
+        Movie.serialize(actionMovie, "action.txt");
+
+        // Print the object's details to the console
+        actionMovie.prettyPrint();
+
+        // Deserialize the object from the "action.txt" file
+        Movie DeserializeActionMovie = Movie.deserialize("action.txt");
+
+        // Print the deserialized object's details to the console
+        System.out.println("\nThis is DeserializeActionMovie:\n");
+        DeserializeActionMovie.prettyPrint();
     }
-}
+}1
