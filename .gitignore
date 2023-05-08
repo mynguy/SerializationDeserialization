@@ -27,3 +27,13 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### Gradle ###
+.gradle/
+build/
+Project23/.nb-gradle/
+
+### IntelliJ ###
+.idea/
+*.iml
+!.idea/gradle.xml
