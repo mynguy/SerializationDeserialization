@@ -23,7 +23,7 @@ public class MovieDriver {
         System.out.println("\nPrinting the deserializeFromCSV object:\n");
         System.out.println(DeserializeActionMovie.prettyPrint());
 
-        System.out.println("\nAre the two movie objects equal?\n");
+        System.out.println("\nAre the two movie objects equal?");
         System.out.println(DeserializeActionMovie.equals(actionMovie));
     }
 }
